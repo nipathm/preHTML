@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Freelancer - Start Bootstrap Theme</title>
+
+  <!-- Custom fonts for this theme -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+
+       
+
+  <!-- About Section -->
+  <section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+
+      <!-- About Section Heading -->
+      <h2 class="page-section-heading text-center text-uppercase text-white">CSS</h2>
+
+      <!-- Icon Divider -->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+
+      <!-- About Section Content -->
+      <div class="row">
+        <div class="col-lg-4 ml-auto">
+          <p class="lead text-center">CSS</p>
+          <p class="lead"> คือตัวที่ช่วยจัดรูปแบบและตกแต่งหน้าเว็บของเราบน browser ซึ่งการเขียน css ก็สามารถเขียนได้หลายๆแบบ ไม่ว่าจะเป็นการเขียน โดยใช้ selector หรือจะเป็นการเขียนแบบ inline ซึ่งผลลัพธ์ที่ออกมาก็สามารถใช้งานได้เหมือนกัน</p>
+        </div>
+        <div class="col-lg-4 mr-auto">
+          <p class="lead text-center"> CSS Specificity คืออะไร ?</p>
+          <p class="lead"> Css Specificity คือค่าบางอย่างที่จะจะบอก browser ว่าให้เลือกใช้ Style ตัวไหนมาแสดงผลหน้าเว็บ ซึ่งจะมีการเขียนหลายแบบมากๆ ซึ่งแต่ละแบบจะมีค่า specificity ที่แตกต่างกันออกไป</p>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <h2 class="page-section-heading text-center text-uppercase text-white">Css Specificity</h2>
+      <p class = "lead">
+          <br>
+        CSS Specificity เป็นคอนเซปต์การเลือก CSS Selector ที่มี ความสามารถเยอะที่สุด มาใช้กับ Element บนหน้าเว็บไซต์
+        ภาษา CSS เหมือนภาษาการเขียนโปรแกรมอื่น ๆ ที่อ่านโค้ดจาก บน – ล่าง แปลว่า ถ้าเขียน CSS Selector ซ้ำกัน 2 อัน อันล่างจะถูกนำไปใช้งานเพราะใหม่กว่า แต่ความพิเศษของ CSS คือ Selector ที่แตกต่างกันแต่ละ Selector จะมีความสามารถ ไม่เหมือนกัน และเมื่อไหร่ที่ความสามารถ ต่างกัน ลำดับการเขียนโค้ดจะไม่มีผลทันที
+        <br>
+        <br>
+        ตัวอย่างง่าย ๆ ของเรื่อง CSS Specificity คือ ถ้าเราเขียน HTML/CSS แบบนี้: <br>
+        <br>
+        HTML:
+        <br>
+        <\div class="box" id="redbox"></\div>
+        <br>
+        <br>
+        CSS:
+        <br>
+        .box { background: white; } /* ให้ .box พื้นหลังสีขาว */
+        <br>
+        #redbox { background: red; } /* ให้ #redbox พื้นหลังสีแดง */
+        <br>
+        <br>
+        โดยในตัวอย่างทั้ง 2 นั้น CSS Selector ทั้ง 2 อันขในตัวอย่างจะมีความสามารถแตกต่างกัน โดยความสามารถจะแตกต่างกันจากการใช้ Class, ID, !Important หรือ การซ้อน Element หลายๆชั้น
+        <br>
+        <br>
+        ตัวอย่างการเรียนใช้ Class selector <br>
+        <br>
+        .list-unstyled { <br>
+            padding-left: 0; <br>
+            list-style: none; <br>
+          } <br>
+          <br>
+        ตัวอย่างการเรียกใช้ ID selector <br>
+        <br>
+        #content {<br>
+            flex-direction: column;<br>
+          } <br>
+    </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2 class="page-section-heading text-center text-uppercase text-white">สรุป</h2>
+    <p class ="lead">
+        CSS Specificity บราวเซอร์จะเลือกใช้คำสั่งที่เจาะจงที่สุดซึ่งวิธีการจะคำนวนจาก ค่า CSS Selector เพื่อนำมาส่งให้บราวเซอร์รู้ว่าจะใช้ Style ตัวไหนเพื่อนำไปแสดงหน้าเว็บไซต์ หากว่าโค๊ดนั้นมีการเรียกใช้ซ้ำกันเยอะจนเกินไป บราเซอร์จะเลือกใช้คำสั่งที่เจาะจงที่สุด
+    </p>
+  </section>
+    
+
+</body>
+
+</html>
